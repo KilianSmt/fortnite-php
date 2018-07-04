@@ -43,7 +43,7 @@ var_dump($auth->leaderboard->getLeaderboardData(Platform::PC, Mode::DUO));
 ### Get News 
 ```php
 $auth = Auth::login('epic_email@domain.com','password');
-var_dump($auth->news->getNews(Language::ENGLISH,NewsType::BATTLEROYALE)); 
+var_dump($auth->news->get(Language::ENGLISH,NewsType::BATTLEROYALE)); 
 ```
 
 
@@ -51,7 +51,7 @@ var_dump($auth->news->getNews(Language::ENGLISH,NewsType::BATTLEROYALE));
 ### Get Store
 ```php
 $auth = Auth::login('epic_email@domain.com','password');
-var_dump($auth->store->getStore(Language::ENGLISH)); 
+var_dump($auth->store->get(Language::ENGLISH)); 
 ```
 
 ### Constants
